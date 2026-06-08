@@ -1,0 +1,79 @@
+
+<html>
+<head>
+<style>
+    body { font-family: sans-serif; padding: 20px; }
+    table { width: 50%; border-collapse: collapse; }
+    td { padding: 10px; }
+    .label-cell { width: 30%; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="/submit_form" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td class="label-cell"><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="fname">Father's Name:</label></td>
+            <td><input type="text" id="fname" name="fname" required></td>
+        </tr>
+        <tr>
+            <td class="label-cell">Gender:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="trade">Trade:</label></td>
+            <td>
+                <select id="trade" name="trade">
+                    <option value="cs">Computer Science</option>
+                    <option value="ee">Electrical</option>
+                    <option value="mech">Mechanical</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="address">Address:</label></td>
+            <td><textarea id="address" name="address" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="mobile">Mobile Number:</label></td>
+            <td><input type="tel" id="mobile" name="mobile"></td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="hobbies">Hobbies:</label></td>
+            <td><input type="text" id="hobbies" name="hobbies"></td>
+        </tr>
+        <tr>
+            <td class="label-cell"><label for="file">File Upload:</label></td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
